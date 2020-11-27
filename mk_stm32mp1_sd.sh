@@ -414,18 +414,10 @@ ssbl
 n
 
 
-+32M
+
 8300
 c
 4
-boot
-n
-
-
-
-8300
-c
-5
 rootfs
 p
 $WRITE
