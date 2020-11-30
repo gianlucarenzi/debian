@@ -520,7 +520,7 @@ function format_disk_ext4() {
 	fi
 	# Needed for compatibility Debian Wheezy on kernel 3.12!
 	# So it can be used in latest kernel!
-	$DEBUG $SUDO tune2fs -O ^metadata_csum $1 1>/dev/null 2>/dev/null
+	$DEBUG $SUDO tune2fs -O ^metadata_csum,^64bit $1 1>/dev/null 2>/dev/null
 }
 
 function disabling_journaling_ext4() {
